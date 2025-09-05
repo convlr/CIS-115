@@ -1,0 +1,149 @@
+hardware
+- main storage
+- secondary storage
+- input output
+
+software
+- os apps
+- applications
+
+cpu
+- reads
+- doing math
+- macine language(binary)
+- fetchs code from ram
+- assembly
+
+code
+- low level
+- high level
+- syntax - structure we have to follow
+- compiled languages and interpretted
+
+errors
+- sytnax
+- semantic
+- runtime
+
+binary
+- 8 1s and 0s is a byte
+- 1 is a bit
+- 1000 is a kilobit
+- bits act as switches(true false)
+- negative numbers use the 2s compliment
+
+9/3/2025
+
+Designing a Program
+- Program development cycle
+        Design prog
+        write the code
+        correct syntax
+
+- Understand the task that the program is to perform
+        work with customer to get a sense what the program is supposed to do
+        ask questions about program detais
+        create one or more software requirements
+
+- Determin the steps that must be taken to prerform the task
+        break down required task into a series of steps
+        creat an algorithm listing logical steps that must be taken
+
+- Algorithm (set of well-defined logical steps that must be taken to perform a
+  task)
+
+Pseudocode
+- informal language that has no syntax rule
+- not meant to be compiled or executed
+- used to create model program
+
+Flowcharts
+- ovals are terminal symbols
+- prallelograms are input and ouput symbold
+- rectangles are processing symbols
+- symbols are connected by arrows that represent the flow of the program
+
+Input, Processing and Output
+- Receie input
+- Preform some process on the input
+- produce output
+
+Displaying output
+- Funciton
+- Argument
+- Statements in a program execut in the order that they appear
+        from top to bottom
+
+Strings and string literals
+- string (sequence of characters that is used as data)
+- string literal(string that appears in actual code of a program
+        must be enclosed in single ' or double " quote marks
+        string literal can be enclosed in triple qoutes (''' or """)
+
+Comments
+- ignored by python
+- end-line comment appears at the end of a line of code
+
+Variables
+- used to access and manipulate data stored in memory
+- a variable references the value it represents
+- General format is variable = expression
+- In assignment statement variable receiving value must be on left side
+- a variable can be passed a an argument to a function
+- you can only use a variable if a value is assigned to it
+- Naming Rules
+        - variable name cannot be a python key word
+        - variable name cannot contain spaces
+        - first character must be a letter or an underscore
+        - after first character may use letters digits or underscores
+        - variable names are case sensitive
+
+PascalCase
+camelCase
+snake_case
+
+Variable reassignment
+- Garbage collection (removal of values that are no longer referenced by
+  variables
+- A variable can refer to item of any type
+        - variable that has been assigned to one type can be reassigned to
+          another type
+
+data types
+- int for integer float for real number str used for storing strings in memory
+- no decimal point considered int otherwise considered float
+
+Reading input from the keyboard
+- most programs need to read input from the user
+- built-in input function reads input from keyboard
+        returns the data as a string 
+        format: variable = input(prompt)
+        Does not automatically display a space after the prompt
+
+Reading nums with the input func
+- input function always returns a string
+- built-in functions convert between satatypes
+        int converts item to an int
+        float converts item to a float
+        nested function call: general format
+        type conversion only works if item is valid numeric value, ohterwise,
+        throws exception
+        nested function call: general format
+        function1(function2(argument))
+
+        Casting turns str to ints
+
+performing calculations
+- math expression: perfomrs calculation and gives a value
+        math operator
+        operands
+- two types of division
+        / operator performs floating point division
+        // operator performs integer division
+
+operator precedence and grouping with parantheses
+- python does pemdas
+- Higher precedence performed first
+        same precedence operators execute from left to right
+
+
