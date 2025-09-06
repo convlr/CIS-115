@@ -1,8 +1,8 @@
 # ========================================
 # NAME: Brantley Lyons
-# DATE: due date of the lab
-# COURSE: CIS-115-your section number
-# PURPOSE: The goal of this program is ...
+# DATE: 9/7/25
+# COURSE: CIS-115-NLE01
+# PURPOSE: Completing Lab 2
 # ========================================
 
 # Problem 1: counting the powers of 2
@@ -36,7 +36,7 @@ d2 = int(input("Enter the next digit: "))
 d3 = int(input("Enter the next digit: "))
 d4 = int(input("Enter the next digit: "))
 
-result = d1*8 + d2*4 + d3*2 + d1*1
+result = d1*8 + d2*4 + d3*2 + d4*1
 
 print("The value is", result)
 
@@ -70,15 +70,15 @@ print(f"{division:.3f}")  # formatting to 3 decimal places
 
 # Problem 7: dividing user floats
 
-float1 = int(input("Enter a floating-point value: "))
-float2 = int(input("Enter second floating-point: "))
+float1 = float(input("Enter a floating-point value: "))
+float2 = float(input("Enter second floating-point: "))
 dividing = float1 / float2
 print(f"{dividing:.5f}")  # formatting again
 
 # Problem 8: dividing user floats and displaying in scientific notation
 
-floatingPoint1 = int(input("Enter a floating-point value: "))
-floatingPoint2 = int(input("Enter second floating-point: "))
+floatingPoint1 = float(input("Enter a floating-point value: "))
+floatingPoint2 = float(input("Enter second floating-point: "))
 divideFloats = floatingPoint1 / floatingPoint2
 print(f"{divideFloats:.6e}")  # e to format in scientific notation
 
