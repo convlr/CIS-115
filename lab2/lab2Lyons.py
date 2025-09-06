@@ -1,5 +1,5 @@
 # ========================================
-# NAME: your name goes here
+# NAME: Brantley Lyons
 # DATE: due date of the lab
 # COURSE: CIS-115-your section number
 # PURPOSE: The goal of this program is ...
@@ -31,3 +31,65 @@ print(f"{base} to the power of {exponent} is {powerResult}")
 
 # Problem 4: convert user input to binary
 
+d1 = int(input("Enter the leftmost digit: "))
+d2 = int(input("Enter the next digit: "))
+d3 = int(input("Enter the next digit: "))
+d4 = int(input("Enter the next digit: "))
+
+result = d1*8 + d2*4 + d3*2 + d1*1
+
+print("The value is", result)
+
+# Problem 5: convert decimal to binary
+
+number = 13
+print("The number I chose was 13")
+print("13 in binary, with the digits in reverse order is:")
+remainder = number % 2
+number = number // 2
+print(remainder)
+remainder = number % 2
+number = number // 2
+print(remainder)
+remainder = number % 2
+number = number // 2
+print(remainder)
+remainder = number % 2
+number = number // 2
+print(remainder)
+remainder = number % 2
+number = number // 2
+print(remainder)
+
+# Problem 6: dividing user ints
+
+digit1 = int(input("Enter your first number: "))
+digit2 = int(input("Enter your second number: ")) 
+division = digit1 / digit2
+print(f"{division:.3f}")  # formatting to 3 decimal places
+
+# Problem 7: dividing user floats
+
+float1 = int(input("Enter a floating-point value: "))
+float2 = int(input("Enter second floating-point: "))
+dividing = float1 / float2
+print(f"{dividing:.5f}")  # formatting again
+
+# Problem 8: dividing user floats and displaying in scientific notation
+
+floatingPoint1 = int(input("Enter a floating-point value: "))
+floatingPoint2 = int(input("Enter second floating-point: "))
+divideFloats = floatingPoint1 / floatingPoint2
+print(f"{divideFloats:.6e}")  # e to format in scientific notation
+
+# Problem 9: display two user ints into each arithmetic equation
+
+userInt1 = int(input("Enter first number: "))
+userInt2 = int(input("Enter second number: "))
+print(userInt1, "+" , userInt2, "=", userInt1 + userInt2)
+print(userInt1, "-" , userInt2, "=", userInt1 - userInt2)
+print(userInt1, "*" , userInt2, "=", userInt1 * userInt2)
+print(f"{userInt1} /  {userInt2} = {userInt1 / userInt2:.2f}")
+print(userInt1, "//" , userInt2, "=", userInt1 // userInt2)
+print(userInt1, "%" , userInt2, "=", userInt1 % userInt2)
+print(f"{userInt1} ** {userInt2} = {userInt1 ** userInt2:,}")
