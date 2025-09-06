@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor backup files
+*.un~
+
+# Python cache
+__pycache__/
+*.pyc
+
