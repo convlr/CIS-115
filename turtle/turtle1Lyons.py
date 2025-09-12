@@ -1,8 +1,12 @@
 import turtle
 import time
 
+turtle.bgcolor("AliceBlue")
+turtle.fillcolor("white")
+
 # creating first object
-turtle.speed(1)
+
+turtle.begin_fill()
 turtle.hideturtle()
 turtle.penup()
 turtle.goto(100,0)
@@ -18,11 +22,59 @@ turtle.goto(-50,50)
 turtle.goto(0,0)
 turtle.goto(-50,-50)
 turtle.goto(-100,0)
-
+turtle.end_fill()
 
 time.sleep(2)
 turtle.reset()
 
+# creating second object
 
+turtle.hideturtle()
+turtle.forward(100)
+turtle.goto(100,-100)
+turtle.goto(0,-100)
+turtle.goto(0,100)
+turtle.goto(-100,100)
+turtle.goto(-100,0)
+turtle.goto(0,0)
+turtle.penup()
+turtle.goto(0,100)
+turtle.pendown()
+turtle.goto(100,0)
+turtle.penup()
+turtle.goto(-100,100)
+turtle.pendown()
+turtle.goto(100,-100)
+turtle.penup()
+turtle.goto(-100,0)
+turtle.pendown()
+turtle.goto(0,-100)
+
+time.sleep(2)
+turtle.reset()
+
+# creating third object
+
+turtle.hideturtle()
+turtle.penup()
+turtle.goto(0,-25)
+turtle.pendown()
+turtle.circle(50)
+turtle.penup()
+turtle.goto(-125,-25)
+turtle.pendown()
+turtle.circle(50)
+turtle.penup()
+turtle.goto(125,-25)
+turtle.pendown()
+turtle.circle(50)
+turtle.penup()
+turtle.goto(62.5,-75)
+turtle.pendown()
+turtle.circle(50)
+turtle.penup()
+turtle.goto(-62.5,-75)
+turtle.pendown()
+turtle.circle(50)
 
 turtle.done()
