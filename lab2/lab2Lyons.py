@@ -2,7 +2,7 @@
 # NAME: Brantley Lyons
 # DATE: 9/7/25
 # COURSE: CIS-115-NLE01
-# PURPOSE: Completing Lab 2
+# PURPOSE: Lab 2
 # ========================================
 
 # Problem 1: counting the powers of 2
@@ -19,7 +19,7 @@ print(2**7)
 # Problem 2: some user int rasied to the power of 2
 
 userNumber = int(input("What power of two?: "))
-squared = userNumber ** 2
+squared = 2 ** userNumber
 print(f"Two to the power of {userNumber} is {squared}")
 
 # Problem 3: user int raised to user int

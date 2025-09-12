@@ -146,4 +146,42 @@ operator precedence and grouping with parantheses
 - Higher precedence performed first
         same precedence operators execute from left to right
 
+Breaking long statements
+- Multiline continuation character \
+
+String concatenation
+- To append one string to the end of another string 
+- Use the + operator to concatenate strings
+- Two or more string literals written adjacent to each other are inplicitly
+  concatenated
+
+Print Func
+- has the end='delimiter' and the sep='delimiter' arguments
+
+Displaying formatted output with f-strings
+- an f-string is a special type of string literal that is prefixed twith the
+  letter f
+- f-strings support placeholders for variables
+-placeholders can also be expressions that are evaluated
+- format specifiers can be used with placeholders
+- .2f means:
+        round the value to 2 decimal places
+        display the value as a floating-point number
+- The order [alignment][width][,][.precision][type]
+
+The problem with magic numbers
+
+named Constants
+- You should use named constants instead of magic numbers
+- a named constant is a name that represents a value that does not change during the programs execution
+- EX
+        INTEREST_RATE = 0.069
+- This creates a named constatn named INTEREST_RATE assigned the value 0.069. It can be used instead of the magic number:
+        amout = balance * INTEREST_RATE
+
+Advantages of using named constants 
+- maked code self-explanatory
+
+
+
 
