@@ -1,0 +1,6 @@
+start
+    input subtotal
+    tax_rate = subtotal * .07
+    sales_total = subtotal + tax_rate
+    display subtotal, sales_tax, total
+end

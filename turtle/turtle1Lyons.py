@@ -1,3 +1,12 @@
+# =================================================================
+# AUTHOR: Brantley Lyons
+# DATE: 9/17/25
+# PROGRAM: Turtle 1
+# PURPOSE: The goal of this lab is to get familiar with turtle
+#          graphics
+# =================================================================
+
+
 import turtle
 import time
 
@@ -76,5 +85,114 @@ turtle.penup()
 turtle.goto(-62.5,-75)
 turtle.pendown()
 turtle.circle(50)
+
+time.sleep(2)
+turtle.reset()
+
+# creating fourth object
+
+turtle.hideturtle()
+turtle.fillcolor("white")
+turtle.penup()
+turtle.goto(0,100)
+turtle.pendown()
+turtle.goto(-100,-100)
+turtle.goto(100,-100)
+turtle.goto(0,100)
+turtle.penup()
+turtle.goto(100,-100)
+turtle.pendown()
+turtle.begin_fill()
+turtle.goto(0,0)
+turtle.goto(-100,-100)
+turtle.goto(100,-100)
+turtle.end_fill()
+
+time.sleep(2)
+turtle.reset()
+
+# creating fifth object
+
+turtle.hideturtle()
+turtle.forward(100)
+turtle.penup()
+turtle.goto(110,-5)
+turtle.write("East")
+turtle.goto(0,0)
+turtle.left(90)
+turtle.pendown()
+turtle.forward(100)
+turtle.penup()
+turtle.goto(0,105)
+turtle.write("North", align="center")
+turtle.goto(0,0)
+turtle.left(90)
+turtle.pendown()
+turtle.forward(100)
+turtle.penup()
+turtle.goto(-105,-5)
+turtle.write("West", align="right")
+turtle.goto(0,0)
+turtle.pendown()
+turtle.left(90)
+turtle.forward(100)
+turtle.penup()
+turtle.goto(0,-115)
+turtle.write("South", align="center")
+turtle.goto(-25,0)
+turtle.pendown()
+turtle.circle(25)
+
+time.sleep(2)
+turtle.reset()
+
+# creating sixth object
+
+turtle.hideturtle()
+turtle.dot()
+turtle.penup()
+turtle.goto(100,100)
+turtle.pendown()
+turtle.dot()
+turtle.right(180)
+turtle.forward(20)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(50)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(50)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(20)
+turtle.dot()
+turtle.left(90)
+turtle.forward(200)
+turtle.dot()
+turtle.left(90)
+turtle.forward(20)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(50)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(50)
+turtle.penup()
+turtle.forward(20)
+turtle.pendown()
+turtle.forward(20)
+turtle.dot()
+turtle.left(90)
+turtle.forward(200)
+turtle.goto(-100,-100)
+turtle.penup()
+turtle.goto(-100,100)
+turtle.pendown()
+turtle.goto(100,-100)
 
 turtle.done()
