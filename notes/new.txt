@@ -197,4 +197,9 @@ Boolean Expressions and relational operators
         Example: a > b
         true if a is greater than b otherwise false
 
+Repetition Structures
+- often have to write code that performs the same task multiple times
+		makes program large
 
+while loops
+- 
