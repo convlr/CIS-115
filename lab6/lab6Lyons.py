@@ -28,3 +28,28 @@ print(something)
 
 print("Problem 3: Summing values entered by the user")
 
+add = 0
+while True:
+	user_int = int(input("Enter a number (-1 to quit): "))
+	if user_int == -1:
+		break
+	add += user_int
+
+print(f"The sum is: {add}")
+
+new_add = 0
+first = True
+while True:
+	if first:
+		user_num = int(input("Enter the first number to sum (-1 to quit): "))
+		first = False
+	else:
+		user_num = int(input("Enter the next number (-1 to quit): "))
+	if user_num == -1:
+		break
+	if 0 <= user_num <= 100:
+		new_add += user_num
+
+print(f"The sum of all the positive values less than 100 is: {new_add}")
+
+
