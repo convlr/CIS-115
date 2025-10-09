@@ -31,12 +31,11 @@ print("Problem 3: Summing values entered by the user")
 
 # Problem 3
 add = 0
+user_int = int(input("Enter a number (-1 to quit): "))
 
-while True:
-	user_int = int(input("Enter a number (-1 to quit): "))
-	if user_int == -1:
-		break
+while user_int != -1:
 	add += user_int
+	user_int = int(input("Enter a number (-1 to quit): "))
 
 print(f"The sum is: {add}\n")
 
@@ -44,20 +43,13 @@ print(f"The sum is: {add}\n")
 print("Problem 4: Summing positive values entered by user that are less than 100")
 
 new_add = 0
-first = True
+user_num = int(input("Enter the first number to sum (-1 to quit): "))
 
-while True:
-	if first:
-		user_num = int(input("Enter the first number to sum (-1 to quit): "))
-		first = False
-	else:
-		user_num = int(input("Enter the next number (-1 to quit): "))
-
-	if user_num == -1:
-		break
-
+while user_num != -1:
 	if 0 <= user_num <= 100:
 		new_add += user_num
+
+	user_num = int(input("Eneter the next number (-1 to quit): "))
 
 print(f"The sum of all the positive values less than 100 is: {new_add}\n")
 
@@ -66,24 +58,18 @@ print("Problem 5: Counting the number of positive and negative values entered by
 
 positive = 0
 negative = 0
-first_iteration = True
 
-while True:
-	if first_iteration:
-		user_value = input("Enter the first number (enter q to quit): ")
-		first_iteration = False
-	else:
-		user_value = input("Enter the next number (enter q to quit): ")
+user_value = input("Enter the first number (enter q to quit): ")
 
-	if user_value == "q":
-		break
-
+while user_value != "q":
 	user_value = int(user_value)
 	
 	if user_value > 0:
 		positive += 1
 	elif user_value < 0:
 		negative += 1
+
+	user_value = input("Enter the next number (enter q to quit): ")
 
 print(f"The number of positive values entered is: {positive}")
 print(f"The number of negative values entered is: {negative}")
