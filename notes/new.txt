@@ -179,7 +179,7 @@ named Constants
 - This creates a named constatn named INTEREST_RATE assigned the value 0.069. It can be used instead of the magic number:
         amout = balance * INTEREST_RATE
 
-Advantages of using named constants 
+Advantages of using named constants
 - maked code self-explanatory
 
 sep 17
@@ -202,4 +202,3 @@ Repetition Structures
 		makes program large
 
 while loops
-- 

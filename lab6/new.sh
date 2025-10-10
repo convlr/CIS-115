@@ -16,4 +16,7 @@ do
 	x=$((x + 2))
 done
 
-echo "$value"	
+echo "$value"
+
+
+

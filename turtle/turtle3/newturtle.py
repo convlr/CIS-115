@@ -24,16 +24,34 @@ turtle.showturtle()
 turtle.shape("turtle")
 
 x, y = turtle.position()
+newloop = 0
 
-for i in range(5):
+while newloop < 5:
 	turtle.color(random.choice(TURTLE_COLOR))
 	turtle.setheading(TURTLE_DIRECTION)
 	turtle.forward(TURTLE_DISTANCE)
-	newposition = turtle.position()
-	x, y = newposition
+	newloop += 1
 	if -100 <= x <= 100 and -100 <= y <= 100:
 		turtle.write("Darn!")
+		turtle.color(random.choice(TURTLE_COLOR))
+		turtle.setheading(TURTLE_DIRECTION)
+		turtle.forward(TURTLE_DISTANCE)
 	else:
-		turtle.write("Tiddles escaped!")
-
+		turtle.write("Tiddles did not escape!")
+#for i in range(5):
+#
+#	newposition = turtle.position()
+#	turtle.color(random.choice(TURTLE_COLOR))
+#	turtle.setheading(TURTLE_DIRECTION)
+#	turtle.forward(TURTLE_DISTANCE)
+#
+#	x, y = newposition
+#
+#	if -100 <= x <= 100 and -100 <= y <= 100:
+#		turtle.write("Darn!")
+#        turtle.color(random.choice(TURTLE_COLOR))
+#        turtle.setheading(TURTLE_DIRECTION)
+#        turtle.forward(TURTLE_DISTANCE)
+#
+#	else:
 turtle.done()
