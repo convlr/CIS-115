@@ -4,8 +4,6 @@ import random
 TURTLE_COLOR = ["red", "orange", "yellow", "green", "blue"]
 BOX_WIDTH = 200
 BOX_HEIGHT = 200
-TURTLE_DIRECTION = random.randint(0, 359)
-TURTLE_DISTANCE = random.randint(1, 100)
 
 turtle.color("tan")
 turtle.hideturtle()
@@ -39,5 +37,18 @@ for i in TURTLE_COLOR:
 		turtle.write("Darn!")
 	else:
 		turtle.write("Tiddles escaped!")	
+
+for color in TURTLE_COLOR:
+
+	turtle.color(color)
+	turtle.setheading(random.randint(0, 359))
+	turtle.forward(random.randint(1, 100))
+
+	x, y = turtle.pos()
+
+	if -100 <= x <= 100 and -100 <= y <= 100:
+		turtle.write("Darn!")
+	else:
+		turtle.write("Tiddles escaped!")
 
 turtle.done()
