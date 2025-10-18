@@ -1,0 +1,26 @@
+start
+
+    display "This program takes an integer number and multiplies it by the numbers 1 - 5."
+    display "Then, it will display the results and if the product is even or odd."
+
+    set cancel = 999
+
+    input "Enter an integer number (999 to quit): "
+
+    while int1 != cancel
+
+        display "value   index   product   result"
+
+        for i = (1, 5)
+            set product = int1 * i
+
+            if product % 2 = 0
+                set result = "even"
+            else
+                set result = "odd"
+
+            display int1, i, product, result
+
+        input "Enter an integer number (999 to quit): "
+
+end
